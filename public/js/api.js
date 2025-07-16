@@ -15,3 +15,4 @@ async function fetchAPI(endpoint) {
 
 export const getFeaturedProducts = () => fetchAPI('/products/featured');
 export const getAllProducts = () => fetchAPI('/products');
+export const getProductById = (id) => fetchAPI(`/products/${id}`);

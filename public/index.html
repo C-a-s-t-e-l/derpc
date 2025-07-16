@@ -7,21 +7,15 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <!-- The Cart Sidebar goes outside the main #app so it can overlay everything -->
+    <div id="cart-sidebar-container"></div>
+    
+    <div id="main-container"> <!-- New wrapper -->
+        <header id="main-header-container"></header>
+        <main id="app"></main>
+    </div>
 
-    <header id="main-header">
-        <!-- We will populate this with JS later -->
-    </header>
-
-    <main id="app">
-        <!-- All our "page" content will be injected here by the router -->
-    </main>
-
-    <footer id="main-footer">
-        <!-- We will populate this with JS later -->
-    </footer>
-
-    <!-- The 'type="module"' attribute is crucial for modern JS -->
+    <!-- We'll remove the static footer for now to simplify -->
     <script type="module" src="./js/main.js"></script>
-
 </body>
 </html>
